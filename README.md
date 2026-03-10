@@ -12,26 +12,11 @@ a la vez que proporciona un punto de acceso global a dicha instancia.
 
 ## [Codigo](Program.cs)
 
-
-
-1.-el atributo estático de la instancia
-  - Es una variable estática, entonces es propia de la clase, pero
-  - no de los objetos que se generen. Se usa para guardar en la memoria
-  - la única copia de la instancia del objeto "Central_911" que no va a cambiar durante toda la ejecución del programa
-    
-2.-el constructor
- - Al ser un constructor privado no puede ser usado fuera de la clase,
- - otras clases no pueden hacer su instancia al no poder usar la palabra new,
-
-<img width="393" height="322" alt="SS singleton" src="https://github.com/user-attachments/assets/74826de7-364b-41a2-b227-3f77ec17fe87" />
-
-
-¿Por qué no se pueden crear múltiples objetos?
- - El patron asegura que al intentar crear otra instancia devuelve un valor de la instancia
- - ya existente, por eso el doble metodo para asegurarse de si ya hay una instancia creada.
-
+<img width="541" height="794" alt="image" src="https://github.com/user-attachments/assets/0997e88a-c255-43b4-a07e-40bf34966adf" />
 
 ## Conclusion
-Singletonnos ayuda cuando necesitamos que exista un control centralizado de un recurso compartido. 
-Asi evitamos que se creen copias innecesarias del objeto, esto optimiza el uso de la memoria, 
-ademas de asegurarnos un único punto de acceso global y seguro.
+Con prototipo podemos hacer un grupo de objetos que actúan como prototipos ya establecidos. 
+Estos hace que en vez de estar usando new para hacer un objeto con instancia desde cero,
+solo tendirmoasque buscar el prototipo con las características base que necesitamos y lo clonamos.
+Esto ahorra memoria y principalmente tiempo al estar escribiendo codigo.
+
