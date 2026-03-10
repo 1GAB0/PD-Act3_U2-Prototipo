@@ -13,7 +13,6 @@ a la vez que proporciona un punto de acceso global a dicha instancia.
 ## [Codigo](Program.cs)
 
 
-<img width="467" height="603" alt="SS singleton2" src="https://github.com/user-attachments/assets/c8911e12-2a44-4ab2-bfa6-99429cb1ad21" />
 
 1.-el atributo estático de la instancia
   - Es una variable estática, entonces es propia de la clase, pero
